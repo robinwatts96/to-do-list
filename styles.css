@@ -59,10 +59,15 @@ form {
     color: inherit;
 }
 
-.btn.list {
+.btn.create {
     font-size: 1.5rem;
     font-weight: 900;
     margin-right: .25em;
+    transition: opacity 250ms ease-in;
+}
+
+.btn.create:hover {
+    opacity: .7;
 }
 
 .new {
@@ -101,5 +106,25 @@ form {
 }
 
 .todo-list {
+    --spacer: 2rem;
     grid-area: active;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+.todo-header {
+    padding: var(--spacer);
+    background: #e4e4e4;
+}
+
+.list-title {
+    margin: 0;
+}
+
+.task-count {
+    margin: 0;
+} 
+
+.todo-body {
+    padding: var(--spacer);
 }
