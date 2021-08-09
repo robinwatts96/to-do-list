@@ -51,6 +51,20 @@ form {
     display: flex;
 }
 
+.btn {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+}
+
+.btn.list {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-right: .25em;
+}
+
 .new {
     background: transparent;
     border: 0;
