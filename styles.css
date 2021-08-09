@@ -42,6 +42,8 @@ body {
 
 .task-list {
     line-height: 1.7;
+    font-size: 1.2rem;
+    list-style: circle;
 }
 
 .todo-list {
