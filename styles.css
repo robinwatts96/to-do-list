@@ -47,6 +47,33 @@ body {
     padding-left: 1.1em;
 }
 
+form {
+    display: flex;
+}
+
+.new {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    font-size: inherit;
+    outline: none;
+    transition: border-bottom 150ms ease-in;
+    order: 2;
+}
+
+.new:focus {
+    border-bottom-width: 3px;
+}
+
+.new:focus::placeholder {
+    opacity: .2;
+}
+
+.new.list {
+    font-size: 1.1rem;
+}
+
 .active-list {
     font-weight: 700;
 }
