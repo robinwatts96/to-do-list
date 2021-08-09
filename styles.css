@@ -28,10 +28,20 @@ body {
 
 .title {
     grid-area: header;
+    text-align: center;
+    font-size: calc(7vw + 2rem);
+    font-weight: 900;
+    color: rgba(0,0,0,0.1);
+    letter-spacing: 1px;
+    margin: -0.2em 0 0.5em;
 }
 
 .all-tasks {
     grid-area: lists;
+}
+
+.task-list {
+    line-height: 1.7;
 }
 
 .todo-list {
