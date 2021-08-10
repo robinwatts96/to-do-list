@@ -194,3 +194,9 @@ form {
     transform: scale(1.2);
     color: var(--clr-primary);
 }
+
+[type="checkbox"]:checked + label .custom-checkbox {
+    background: var(--clr-primary);
+    border-color: var(--clr-primary);
+    box-shadow: inset 0 0 0px 2px white;
+}
