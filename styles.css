@@ -158,21 +158,25 @@ form {
 }
 
 .task label {
-    display: flex;
+    display: flex-inline;
     align-items: center;
     position: relative;
-    margin-bottom: 1.25em;
 }
 
-.task label::after {
+.task::after {
     content: "";
     position: absolute;
     right: 0;
     left: 0;
-    bottom: -50%;
+    bottom: -0.5em;
     height: 1px;
     background: currentColor;
     opacity: .1;
+}
+
+.task {
+    position: relative;
+    margin-bottom: 1.25em;
 }
 
 
@@ -200,3 +204,19 @@ form {
     border-color: var(--clr-primary);
     box-shadow: inset 0 0 0px 2px white;
 }
+
+[type="checkbox"]:checked + label {
+    opacity: .5;
+}
+
+.task label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 1px);
+    height: 2px;
+    background: currentColor;
+    opacity: 0.6;
+}
+
