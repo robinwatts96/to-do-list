@@ -120,6 +120,10 @@ form {
     font-size: 1.1rem;
 }
 
+.new.task {
+    margin-bottom: 0;
+}
+
 .active-list {
     font-weight: 700;
 }
@@ -150,6 +154,10 @@ form {
 
 .todo-body {
     padding: var(--spacer);
+}
+
+.new-task-creator .create{
+    color: var(--clr-primary);
 }
 
 [type="checkbox"] {
