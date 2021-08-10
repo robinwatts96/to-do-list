@@ -78,6 +78,16 @@ form {
     opacity: .7;
 }
 
+.btn.delete {
+    opacity: 0.7;
+    font-size: 1rem;
+    transition: color 200ms;
+}
+
+.btn.delete:hover {
+    color: var(--clr-warning);
+}
+
 .new {
     background: transparent;
     border: 0;
@@ -154,6 +164,7 @@ form {
 
 .todo-body {
     padding: var(--spacer);
+    position: relative;
 }
 
 .new-task-creator .create{
@@ -235,4 +246,15 @@ form {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+.delete-stuff {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -35px;
+    color: var(--clr-light);
+}
+
 
