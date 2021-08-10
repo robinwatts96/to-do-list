@@ -97,6 +97,11 @@ form {
     outline: none;
     transition: border-bottom 150ms ease-in;
     order: 2;
+    padding: .25em;
+}
+
+.new::placeholder {
+    opacity: .2;
 }
 
 .new::placeholder {
