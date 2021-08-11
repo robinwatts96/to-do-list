@@ -1,4 +1,7 @@
 const listsContainer = document.querySelector('[data-lists]');
+const newListForm = document.querySelector('[data-new-list-form]');
+const newListInput = document.querySelector('[data-new-list-input]');
+
 
 let lists = [{
     id: 1,
@@ -11,12 +14,17 @@ let lists = [{
     name: 'Shopping List'
 }];
 
+newListForm.addEventListener('submit', e => {
+    e.preventDefault();
+});
+
 function render() {
     clearElement(listsContainer);
     lists.forEach(list => {
         const listElement = document.createElement('li');
+        listElement.dataset.listId = list.id;
         listElement.classList.add("list-name");
-        listElement.innerText = list;
+        listElement.innerText = list.name;
         listsContainer.appendChild(listElement);
     }) 
 };
