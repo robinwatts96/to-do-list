@@ -1,2 +1,2 @@
 # to-do-list
- Using HTMl, CSS & Vanilla JAvaScript, I plan to create a to do app with a similar design and functionality of Microsoft ToDo
+ Following along with Kevin Powell & Web Dev Simpliified's Advanced Todo List: https://www.youtube.com/watch?v=W7FaYfuwu70&list=WL&index=9&t=124s
