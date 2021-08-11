@@ -1,6 +1,15 @@
 const listsContainer = document.querySelector('[data-lists]');
 
-let lists = ['name', 'todo'];
+let lists = [{
+    id: 1,
+    name: 'Today'
+}, {
+    id: 2,
+    name: 'Work'
+}, {
+    id: 3,
+    name: 'Shopping List'
+}];
 
 function render() {
     clearElement(listsContainer);
