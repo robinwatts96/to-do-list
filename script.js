@@ -14,12 +14,23 @@ newListForm.addEventListener('submit', e => {
     const list = createList(listName);
     newListInput.value = null;
     lists.push(list);
-    render();
+    saveAndRender();
 });
 
 function createList(name) {
    return {id: Date.now().toString(), name: name, tasks: []}
 }
+
+function saveAndRender () {
+    save();
+    render();
+}
+
+function save() {
+    localStorage.setItem(LOCAL_STORAGE_LIST_KEY, JSON.stringify(lists));
+}
+
+
 
 function render() {
     clearElement(listsContainer);
