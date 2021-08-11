@@ -23,6 +23,12 @@ listsContainer.addEventListener('click', e => {
     }
 });
 
+tasksContainer.addEventListener('click', e => {
+    if (e.target.tagName.toLowerCase() === 'input') {
+        const selectedList = lists.find(list => list.id === selectedListId)
+        const selectedTask = selectedList.tasks.find(task => task.id === e.target.id)
+    }
+}) 
 
 newListForm.addEventListener('submit', e => {
     e.preventDefault();
